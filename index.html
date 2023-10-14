@@ -92,17 +92,25 @@
   <section class="proyectos" id="proyectos">
     <h2 class="titulo2" align="center">Proyectos</h2>
     <center>
-      <span>
-        <h3>Catalan´s Numbers</h3>
-        <video width="640" height="360" controls>
-          <source src="resources/video/v.mp4" type="video/mp4">
-        </video>
-        <br><br>
-        <h3>Editor de Emojis</h3>
-        <img src="resources/imagenes/Editor_Emoji.png" width="640" height="360">
-      </span>
-    </section>
+      <table class="table-proy">
+        <tr>
+          <th>Catalan's Numbers</th>
+          <th>Editor de Emojis</th>
+        </tr>
+        <tr>
+          <td>
+            <video class="video" controls>
+              <source src="resources/video/v.mp4" type="video/mp4">
+            </video>
+          </td>
+          <td>
+            <img class="images" src="resources/imagenes/Editor_Emoji.png">
+          </td>
+        </tr>
+      </table>      
     </center>
+  </section>
+    
     
     <br><br><br>
  
@@ -156,13 +164,13 @@
 
     <section class="sugerencias" id="sugerencias">
       <h2 class="titulo2">Sugerencias</h2>
-      <p><b>Escribe tu sugerencia a continuación: </b></p>
-      <form>
-        <label><b>Ingrese su nombre: </b></label> <input type="text" value="Ejm. Gabriel Pancracio"><br><br>
-        <label><b>Ingrese su correo institucional o empresarial: </b></label> <input type="text" value="Ejm. gpancracio@espol.edu.ec"><br><br>
-        <label><b>Ingrese el tema: </b></label> <input type="text" value="Ejm. Planteo de proyecto"><br><br>
-        <label><b>Ingrese la descripción: </b></label> <input type="text" value="Describa su sugerencia"><br><br>
-        <input type="submit" value="Enviar sugerencia">
+      <p class="texto-alternativo"><b>Escribe tu sugerencia a continuación: </b></p>
+      <form class="form">
+        <label><b>Ingrese su nombre: </b></label> <input class="form__input" type="text" value="Ejm. Gabriel Pancracio"><br>
+        <label><b>Ingrese su correo institucional o empresarial: </b></label> <input  class="form__input" type="text" value="Ejm. gpancracio@espol.edu.ec"><br>
+        <label><b>Ingrese el tema: </b></label> <input class="form__input" type="text" value="Ejm. Planteo de proyecto"><br>
+        <label><b>Ingrese la descripción: </b></label> <input class="form__input" type="text" value="Describa su sugerencia"><br>
+        <input class="form__enviar" type="submit" value="Enviar sugerencia">
       </form>
   
     </section>
