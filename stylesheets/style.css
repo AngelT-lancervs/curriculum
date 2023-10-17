@@ -193,3 +193,11 @@ section{
 .footer .copyright{
   color: #172c66;
 }
+
+@media screen and (max-width: 768px) {
+  html{
+    display: flexbox;
+    border: #363149 2rem solid;
+    border-radius: 1rem;
+  }
+}
