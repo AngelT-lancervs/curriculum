@@ -5,9 +5,10 @@
 
 
 html{
-  display: flexbox;
-  border: #363149 2rem solid;
+  display: grid;
+  border: #363149 3rem solid;
   border-radius: 1rem;
+  margin-right: 0;
 }
 
 * {
@@ -17,7 +18,9 @@ html{
 }
 
 body {
+  display: grid;
   background-color: #fef6e4;
+  margin-right: 0;
 }
 
 .titulo1 {
@@ -41,8 +44,6 @@ p{
 }
 
 table{
-  display: flexbox;
-  width: 70rem;
   border: 1px solid #2a3468;
   border-spacing: 0;
   stroke: #000000;
@@ -50,7 +51,6 @@ table{
 }
 
 th, tr, td{
-  display: flexbox;
   width: 10%;
   text-align: center;
   vertical-align: top;
@@ -78,7 +78,7 @@ tr, td{
 
 .video{
  max-width: 100%;
- height: auto;
+ height: 300px;
  border: 0.2rem solid #4d4d4d;
  margin-top: 1.3rem;
 }
@@ -133,6 +133,7 @@ a {
 section{
   margin-left: 1.5rem;
   margin-bottom: 3rem;
+  margin-right: 0;
 }
 
 .info-personal{
@@ -192,4 +193,7 @@ section{
 
 .footer .copyright{
   color: #172c66;
+}
+
+@media screen and (max-width: 768px) {
 }
