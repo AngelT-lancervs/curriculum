@@ -31,7 +31,7 @@ header{
 
 .titulo1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: var(--side-title);
@@ -40,7 +40,7 @@ header{
 .left-side .titulo2 {
   color: var(--side-title);
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
@@ -97,7 +97,7 @@ h2, h3, h4, h5 {
 
 p{
   font-family: 'Martel Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .right-side section{
@@ -105,8 +105,9 @@ p{
 }
 
 .right-side h2{
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
 }
 
 .image-profile{
@@ -176,6 +177,7 @@ tr, td{
 .proyectos h3{
   font-size: 2rem;
   margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .experiencia{
