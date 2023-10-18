@@ -220,5 +220,17 @@ tr, td{
 }
 
 @media screen and (max-width: 768px) {
-  /* Estilos para pantallas más pequeñas, ajusta según sea necesario */
+  .proyectos image video{
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+
+  table{
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+
+  footer{
+    max-width: max-content;
+  }
 }
