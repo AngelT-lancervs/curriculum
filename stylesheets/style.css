@@ -82,6 +82,7 @@ header{
 }
 
 .left-side{
+  width: 100%;
   flex-basis: 30%;
   width: 25%;
   flex-grow: 1;
@@ -134,6 +135,8 @@ table{
   border-spacing: 0;
   stroke: #000000;
   background-color: #fafafa;
+  max-width: 100%; /* Limita el ancho máximo de la tabla */
+  overflow-x: auto; /* Agrega barras de desplazamiento horizontal cuando sea necesario */
 }
 
 th, tr, td{
@@ -145,15 +148,15 @@ th, tr, td{
 th {
   color: #001858;
   font-family: 'Gilda Display', serif;
-  font-size: 1.3rem;
-  padding: 0.4rem;
+  font-size: 1.5rem;
+  padding: 0.2rem;
 }
 
 tr, td{
   color: #2b3774;
   font-family: 'Martel Sans', sans-serif;
-  font-size: 1rem;
-  padding: 0.4rem;
+  font-size: 1.2rem;
+  padding: 0.2rem;
 }
 
 .proyectos table{
@@ -166,6 +169,11 @@ tr, td{
 
 .video{
   margin-top: 2rem;
+}
+
+.proyectos .images, .video {
+  max-width: 100%; /* Haz que las imágenes y videos se ajusten automáticamente al ancho de su contenedor */
+  height: auto; /* Mantiene la relación de aspecto original */
 }
 
 .experiencia{
