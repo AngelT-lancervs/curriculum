@@ -159,22 +159,23 @@ tr, td{
   padding: 0.2rem;
 }
 
-.proyectos table{
-  overflow: hidden;
-  width: 100%;
+.proyectos-table{
+  margin: 1rem;
+  display: grid;
+  text-align: center;
+  justify-items: center;
 }
 
-.proyectos .images{
-  width: 25%;
-}
-
-.video{
+.video-proyecto{
   margin-top: 2rem;
+  max-width: 100%;
+  width: 500px;
+  height: 300px;
 }
 
-.proyectos .images, .video {
-  max-width: 100%; 
-  height: auto;
+.proyectos h3{
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .experiencia{
