@@ -226,11 +226,10 @@ tr, td{
     max-height: fit-content;
   }
 
-  table{
-    max-width: fit-content;
-    max-height: fit-content;
-  }
-
+ main{
+   flex-direction: column;
+ }
+  
   footer{
     max-width: max-content;
   }
