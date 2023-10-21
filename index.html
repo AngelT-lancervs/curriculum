@@ -11,7 +11,6 @@
   <meta name="author" content="Angel Tomalá" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="stylesheets/style.css" />
-  <!--<link rel="stylesheet" href="stylesheets/normalize.css" />-->
 </head>
 
 <body class="body">
@@ -20,7 +19,7 @@
   </header>
 
   <main>
-    <section class="left-side">
+    <aside>
       <section class="info-personal" id="informacion-personal">
         <h2 class="titulo2">Información Personal</h2>
         <p>
@@ -32,28 +31,18 @@
         <p>
           <i>Ecuador - El Triunfo</i>
         </p>
-
+        <span class="profile">
+          <img src="resources/imagenes/profile.jpg" alt="Foto de frente" class="image-profile">
+          <br>
+        </span>
         <nav class="nav">
           <h2><span class="nav__titulo">Navegación</span></h2>
-          <a class="nav__s" href="#contactos">Contacto</a><br>
-          <a class="nav__s" href="#educacion">Educación</a><br>
           <a class="nav__s" href="#zona">Zona de Estudio</a><br>
           <a class="nav__s" href="#proyectos">Proyectos</a><br>
           <a class="nav__s" href="#habilidades">Habilidades</a><br>
           <a class="nav__s" href="#experiencia">Experiencia</a><br>
-          <a class="nav__s" href="#sugerencias">Sugerencias</a><br>
         </nav>
       </section>
-
-    </section>
-
-    <br>
-
-    <section class="right-side">
-      <br>
-
-      <img src="resources/imagenes/profile.jpg" alt="foto de mi persona" class="image-profile">
-
       <section class="contactos" id="contactos">
         <h2 class="titulo2">Contacto</h2>
         <p>
@@ -69,8 +58,6 @@
         </p>
 
       </section>
-
-      <br>
 
       <section class="educacion" id="educacion">
         <h2 class="titulo2">Educación</h2>
@@ -88,6 +75,26 @@
       </section>
 
       <br>
+      
+      <section class="sugerencias" id="sugerencias">
+        <h2 class="titulo2">Sugerencias</h2>
+        <p class="texto-alternativo"><b>Escribe tu sugerencia a continuación: </b></p>
+        <form class="form">
+          <label><b>Ingrese su nombre: </b></label> <input class="form__input" type="text"
+            value="Ejm. Gabriel Pancracio"><br>
+          <label><b>Ingrese su correo institucional o empresarial: </b></label> <input class="form__input" type="text"
+            value="Ejm. gpancracio@espol.edu.ec"><br>
+          <label><b>Ingrese el tema: </b></label> <input class="form__input" type="text"
+            value="Ejm. Planteo de proyecto"><br>
+          <label><b>Ingrese la descripción: </b></label> <input class="form__input" type="text"
+            value="Describa su sugerencia"><br>
+          <input class="form__enviar" type="submit" value="Enviar sugerencia">
+        </form>
+      </section>
+    </aside>
+
+    <section class="right-side">
+      <br>
 
       <section class="zona" id="zona">
         <h2 class="titulo2">Zona de Estudio</h2><br>
@@ -104,9 +111,6 @@
         <div class="proyectos-table">
           <div class="grid1">
             <h3>Catalan´s Numbers</h3>
-            <video class="video-proyecto" controls>
-              <source src="resources/video/Demo-CatalanNumbers.mp4" type="video/mp4">
-            </video>
             <iframe class="video-proyecto width="300" height="215" src="https://www.youtube.com/embed/Sz6Gz5hojpk?si=dJYbaGtnK8x0zw7J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div class="grid2">
@@ -168,22 +172,6 @@
 
       <br><br><br>
 
-      <section class="sugerencias" id="sugerencias">
-        <h2 class="titulo2">Sugerencias</h2>
-        <p class="texto-alternativo"><b>Escribe tu sugerencia a continuación: </b></p>
-        <form class="form">
-          <label><b>Ingrese su nombre: </b></label> <input class="form__input" type="text"
-            value="Ejm. Gabriel Pancracio"><br>
-          <label><b>Ingrese su correo institucional o empresarial: </b></label> <input class="form__input" type="text"
-            value="Ejm. gpancracio@espol.edu.ec"><br>
-          <label><b>Ingrese el tema: </b></label> <input class="form__input" type="text"
-            value="Ejm. Planteo de proyecto"><br>
-          <label><b>Ingrese la descripción: </b></label> <input class="form__input" type="text"
-            value="Describa su sugerencia"><br>
-          <input class="form__enviar" type="submit" value="Enviar sugerencia">
-        </form>
-
-      </section>
     </section>
 
   </main>

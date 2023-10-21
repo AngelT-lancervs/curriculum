@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-:root{
+:root {
   --title-color: #001858;
   --paragraph-color: #172c66;
   --side-color: #0c416d;
@@ -18,129 +18,160 @@
   margin: 0;
 }
 
-
-main{
+html{
   display: flex;
-  flex-direction: row;
-  overflow-x: hidden;
+  flex-direction: column;
+  min-width: 100vh;
+  min-height: 100vh;
 }
 
 header{
-  background-color: rgb(0, 0, 0);
+  background-color: var(--footer-color);
+  padding: 2rem;
 }
 
 .titulo1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: var(--side-title);
+  align-items: left;
+  color: #fff;
+  font-size: 4rem;
 }
 
-.left-side .titulo2 {
+main {
+  display: flex;
+  flex-direction: row;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: stretch; 
+  flex-grow: 1;
+}
+
+aside {
+  background-color: var(--side-color);
+  padding: 2rem;
+  flex-basis: 30%;
+  text-align: center;
+}
+
+aside h2{
   color: var(--side-title);
   text-align: center;
-  font-size: 2.5rem;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-.left-side p{
+aside section{
+  margin-top: 2rem;
+}
+
+aside p{
   color: var(--side-text);
   text-align: center;
   font-size: 1.3rem;
-  padding: 0.3rem;
 }
 
-.nav{
-  text-align: center;
-}
-
-.nav h2{
-  font-size: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+aside b{
   color: var(--side-title);
 }
 
-.nav .nav__titulo{
-  font-family: 'Gilda Display', serif;
-}
-
-.nav .nav__s{
-  align-self: center;
-  color: var(--side-text);
-  font-size: 2rem;
-  padding-bottom: 10rem;
-}
-
-.right-side{
-  width: 70%;
-  max-width: 70%;
-  flex-basis: 0;
-  flex-grow: 999;
+nav{
   text-align: center;
 }
 
-.left-side{
-  flex-basis: 30%;
-  width: 100%;
-  flex-grow: 1;
-  overflow-x:none;
-  background-color: var(--side-color);
-  padding: 1rem 1rem 1rem 1rem;
+nav a.nav__s{
+  color: var(--side-text);
+  font-size: 1.5rem;
 }
 
-h2, h3, h4, h5 {
+aside .contactos{
+  margin-top: 5rem;
+}
+
+aside .educacion{
+  margin-top: 5rem;
+}
+
+aside .sugerencias{
+  margin-top: 5rem;
+}
+
+aside label{
+  color: var(--side-text);
+}
+
+aside input {
+  color: #423535;
+}
+
+.form label {
+  margin-left: 0;
+  display: block; 
+  text-align: left;
+  margin-right: 10px;
+}
+
+.form .form__input {
+  display: block; 
+  width: 70%; 
+  margin-bottom: 10px; 
+}
+
+.right-side {
+  flex-basis: 64%;
+  padding: 0;
+  text-align: center;
+}
+
+.nav .nav__titulo {
   font-family: 'Gilda Display', serif;
 }
 
-p{
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Gilda Display', serif;
+  font-size: 32px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+p {
   font-family: 'Martel Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
 }
 
-.right-side section{
-  margin-bottom: 3rem;
-}
-
-.right-side h2{
-  font-size: 2rem;
+.right-side li{
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  text-decoration: underline;
-}
-
-.image-profile{
-  margin-top: 1rem;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
-.contactos h2{
-  margin-top: 3rem;
-}
-
-.habilidades ul {
-  font-size: 1.5rem;
   text-align: left;
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
-.habilidades li{
-  margin-bottom: 1rem;
+.image-profile {
+  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
 }
 
-table{
+table {
   border: 1px solid rgb(215, 216, 223);
   border-spacing: 0;
   stroke: #000000;
   background-color: #fafafa;
-  max-width: 100%; /* Limita el ancho máximo de la tabla */
-  overflow-x: auto; /* Agrega barras de desplazamiento horizontal cuando sea necesario */
+  max-width: 100%;
+  overflow-x: auto;
 }
 
-th, tr, td{
+th,
+tr,
+td {
   text-align: center;
   vertical-align: top;
   border: 0.1rem solid #2a3468;
@@ -153,86 +184,74 @@ th {
   padding: 0.2rem;
 }
 
-tr, td{
+tr,
+td {
   color: #2b3774;
   font-family: 'Martel Sans', sans-serif;
   font-size: 1.2rem;
   padding: 0.2rem;
 }
 
-.proyectos-table{
-  margin: 1rem;
-  display: grid;
-  text-align: center;
-  justify-items: center;
-}
-
-.video-proyecto{
-  margin-top: 2rem;
-  max-width: 100%;
-  width: 500px;
-  height: 300px;
-}
-
-.proyectos h3{
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 0;
-}
-
-.experiencia{
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.experiencia table{
+table {
   margin: 0 auto;
 }
 
-.texto-alternativo, .texto-alternativo b{
-  font-family: 'Martel Sans', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.images{
+  max-width: 100%;
+  height: auto;
 }
 
-.form{
+.video-proyecto{
+  width: 50%;
+  height: 300px;
+}
+
+.form {
   text-align: left;
   margin-left: 2rem;
+  display: block;
+  margin-bottom: 6rem;
 }
 
-.form input{
+.form input {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-.form label{
+.form label {
   font-size: 1rem;
 }
 
-.form .form__enviar{
+.form .form__enviar {
   padding: 1rem;
-  border-radius: 3rem;
+  border-radius: 2rem;
 }
 
-.footer{
+.footer {
   background-color: var(--footer-color);
-  padding: 1rem;
+  padding: 2rem;
 }
 
-.footer .copyright{
+.footer .copyright {
   color: var(--side-text);
 }
 
-@media screen and (max-width: 768px) {
-  .proyectos image video{
-    max-width: fit-content;
-    max-height: fit-content;
+@media screen and (max-width: 1200px) {
+  main{
+    flex-direction: column;
+  }
+  
+  aside{
+    flex-basis: 100%;
   }
 
- main{
-   flex-direction: column;
- }
-  
-  footer{
-    max-width: max-content;
-  }
+
+
 }
