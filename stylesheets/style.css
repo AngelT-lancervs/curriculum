@@ -60,6 +60,8 @@ aside h2{
   font-size: 3rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
+  display: inline-flex;
+  border-bottom: 3px solid var(--side-text);
 }
 
 aside section{
@@ -124,6 +126,11 @@ aside input {
   text-align: center;
 }
 
+.right-side h2{
+  display: inline-flex;
+  border-bottom: 3px solid var(--footer-color);
+}
+
 .nav .nav__titulo {
   font-family: 'Gilda Display', serif;
 }
@@ -136,6 +143,7 @@ h5 {
   font-size: 32px;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  
 }
 
 p {
